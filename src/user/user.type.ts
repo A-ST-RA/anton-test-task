@@ -1,16 +1,10 @@
-type DirectionType = {
-    id: number;
-    name: string;
-}
+export type DirectionType = 'Back' | 'Front';
 
-type RankType = {
-    id: number;
-    name: string;
-};
+export type RankType = 'Junior' | 'Middle' | 'Senior';
 
 export type UserType = {
     id: number;
     name: string;
     rank: RankType;
-    direvtion: DirectionType;
+    direction: DirectionType;
 };
